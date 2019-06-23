@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="Estilos.css">
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="Funciones.js"> </script>
+    <title>Sistemas de Ecuaciones</title>
+</head>
+<header>
+    <div class="contenedor">
+        <div id="logo"><img height="40" src="Img/logo.jpg" width="45" alt="40"></div>
+        <h1 id="titulo">Calculadora de ecuaciones </h1>
+        <div id="pestanas">
+            <ul id="lista">
+                <li  id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Introduccion</a></li>
+                <li  id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Primer Grado</a></li>
+                <li  id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>Segundo Grado</a></li>
+                <li  id="pestana4"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>Sistema de Ecuaciones</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<body onload="cambiarPestanna(pestanas,pestana1);">
+        <div id="contenidopestanas">
+
+            <div id="cpestana1">
+            <h2><u>¿Que función tiene esta calculadora?</u></h2>
+            Con este proyecto pretendemos brindar una herramienta fácil de usar que ayude a despejar ecuaciones elementales, ya sean las de primer o segundo grado.
+
+            <h2><u>Quienes somos</u></h2>
+            Nosotros somos dos alumnos de Segundo Año de Ingenieria en Sistemas, planteados a ayudar a aquellos que tengan dificultades con estos temas basicos de algebra. Por otra parte nos obligan a hacer esto xD
+
+            <h2><u>Contacto</u></h2>
+                <ul class="comment">
+            <li>Barbero Agustín: agubarbero22@gmail.com</li>
+            <li>Caceres Martín: caceresmartin22@gmail.com</li>
+                </ul>
+            <h2>Enviar comentario o reportar problema:</h2>
+                <ul class="comment">
+                    <li><label><u>Nombre:</u><br><input type="text" name="name" placeholder="Nombre"></label></li>
+                    <li><label><u>Comentario:</u><br><textarea cols="80" rows="5" name="comentario" placeholder="Comentario"></textarea></label></li>
+                    <li><input type="submit"  class="submit"></li>
+                </ul>
+        </div>
+            <div id="cpestana2">
+                <h2><u>Teoria</u></h2>
+                <p> Una ecuación de primer grado o ecuación lineal es una igualdad que involucra una variable a la primera potencia, es decir, una ecuación que involucra solamente sumas y restas de una variable a la primera potencia. Estas Ecuaciones pueden ser representadas poe una recta que creces o decrece respecto al valor de <strong>A</strong>.La fórmula general de la ecuación de segundo grado es: <strong> AX+B </strong></p>
+                <h2><u>Resolución</u></h2>
+                <p>Para poder resolver una ecuacion de primer grado el objetivo consiste en encontrar el valor que debe tomar la incognita x para que se cumpla la igualdad. Por ejemplo:</p>
+                <ul class="comment"><li>4x + 11 = 19</li>
+                    <li>4x = 19 - 11</li>
+                    <li>4x = 8</li>
+                    <li>x = 8/4</li>
+                    <li>x = 2</li></ul>
+                <p> A continuacion construimos una calculadora que permite obtener las raiz o resultado que satifazca la ecuacion para el valor 0 </p>
+                <h2><u>Calculadora de segundo Grado</u></h2>
+                <ul class="comment">
+                    <li><label>A= <input type="number" id="avar" size="1" value=""></label>
+                        <label>B= <input type="number" id="bvar" size="1" value=""></label>
+                        <input class="submit" type="button" onclick="primer();" value="Resolver">
+                    </li>
+                    <li><label>X1 = <input type="text" id="x1" value="" size="2" disabled></label></li>
+                </ul>
+                <input class="submit" type="button" onclick="can()" value="Grafico">
+                <input class="submit" type="button" onclick="reset()" value="Reset">
+                <canvas id="canva" class="grafix" width="600" height="400" ></canvas>
+            </div>
+
+        <div id="cpestana3">
+        <h2><u>Resolución</u></h2>
+        <p>Para poder resolver una ecuación de segundo grado el objetivo consiste en encontrar los valores que debe tomar la incognitas x para que se cumpla la igualdad. La fórmula general de la ecuación de segundo grado es:
+            <strong> AX<sup>2</sup>+BX+C </strong></p>
+        <p>  Para resolver esta ecuación vamos a utilizar la fórmula de Bhaskara que tiene la siguiente forma:</p>
+        <img src="Img/E2.png" height="54" width="223" alt="54"/>
+        <p>Esta fórmula nos permite obtener los dos valores de X. el primer valor lo obtenemos con el signo más antes de la raíz y el segundo con el signo menos</p>
+        <p>Por Ejemplo: <STRONG>X<sup>2</sup>+3X+2=0</STRONG></p>
+        <img src="Img/Capture.PNG" height="117" width="292" alt=""/>
+        <p>A continuacion construimos una calculadora que permite obtener las "raices" o resultados de la ecuacion</p>
+        <h2><u>Calculadora de segundo Grado</u></h2>
+        <p><b>Inserte la ecuación</b></p>
+            <ul class="comment">
+                    <li><label>A= <input type="text" id="aval" size="2" value=""></label>
+                        <label>B= <input type="text" id="bval" size="2" value=""></label>
+                        <label>C= <input type="text" id="cval" size="2" value=""></label>
+        <input class="submit" type="button" onclick="soluciones();" value="Resolver">
+        </li>
+        <li><label>X1 = <input type="text" id="x11" value="" size="2" disabled></label></li>
+        <li><label>X2 = <input type="text" id="x22" value="" size="2" disabled></label></li>
+                </ul>
+        </div>
+
+        <div id="cpestana4">
+            <h2><u>Que es un sistema de ecuaciones?</u></h2>
+            <p>Un sistema de ecuaciones algebraicas es un conjunto de dos o más ecuaciones con más de una incógnita que conforman un problema matemático. Este consiste en encontrar los valores de las incógnitas que satisfacen dichas operaciones. Para poder resolver estos sistemas se tienen que tener igual cantidad de incógnitas que ecuaciones. Por ejemplo:</p>
+            <ul class="comment">
+                <li>4X+8Y=16</li>
+                <li>5X-15Y=5</li>
+            </ul>
+            <h2><u>Metodos de resolucion</u></h2>
+            <p>Para resolver este sistemas de ecuaciones existen varios caminos que podemos tomar para llegar al resultado. Estos son:</p>
+            <ul>
+                <li>Metodo de Igualacion</li>
+                <li>Metodo de Sutitucion</li>
+            </ul>
+            <h3><u>Metodos de igualacion</u></h3>
+            <p>Supongamos que tenemos el mismo sistema de ecuaciones que utilizamos en el principio.</p>
+            <ul class="comment">
+                <li>4X+8Y=16</li>
+                <li>5X-15Y=5</li>
+            </ul>
+            <p>Primero lo que debemos hacer es despejar, en ambas ecuaciones, la misma variable (En este caso X)</p>
+            <ul class="comment">
+                <li>X=4-2Y</li>
+                <li>X=1+3Y</li>
+            </ul>
+            <p>Luego igualamos ambas ecuaciones entre sí  y despejamos la otra variable (En este caso Y)</p>
+                <ul class="comment">
+                    <li>4-2Y=1+3Y</li>
+                    <li>...</li>
+                    <li>Y=3/5</li>
+                </ul>
+                <p>Para finalizar, lo que hacemos es reemplazar el valor que obtuvimos en alguna de las dos ecuaciones del principio para obtener el resultado de la otra variable. </p>
+                <ul class="comment">
+                    <li>X=4-2(3/5)----->X=14/5</li>
+                    <li>X=1+3(3/5)---->X=14/5</li>
+                </ul>
+                <p>Como ambas ecuaciones nos dan el mismo valor para X podemos decir que el ejercicio esta bien</p>
+                <h3><u>Metodos de sustitucion</u></h3>
+                <p>Supongamos que tenemos el mismo sistema de ecuaciones que utilizamos en el principio.</p>
+                <ul class="comment">
+                    <li>4X+8Y=16</li>
+                    <li>5X-15Y=5</li>
+                </ul>
+                <p>Primero despejamos cualquier incógnita en alguna de las 2 ecuaciones (En este caso la primer ecuación con la variable X) y luego sustituimos la variable que no despejamos por esta ecuación y despejamos.</p>
+                    <ul class="comment">
+                        <li>X=4-2Y</li>
+                        <li>5(4-2Y)-15Y=5</li>
+                        <li>20-10Y-15Y=5</li>
+                        <li>Y=3/5</li>
+                    </ul>
+                <p>Una vez que obtuvimos el valor de la variable, reemplazamos este valor en la ecuación del principio como hicimos en el método anterior</p>
+                    <ul class="comment">
+                        <li>X=4-2(3/5)----->X=14/5</li>
+                        <li>X=1+3(3/5)---->X=14/5</li>
+                    </ul>
+                <p>Como ambos valores de X tienen el mismo resultado, podemos concluir que el ejercicio esta correcto</p>
+            </div>
+        </div>
+</body>
+</html>
