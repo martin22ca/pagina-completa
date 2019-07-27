@@ -3,24 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="45a9c455-ed14-41f8-859a-f654615a3d4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Estilos.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Funciones.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/Capture.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/E2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/E2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/P6-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/bhaskara.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Img/logo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Img/res.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/res.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery-1.7.2.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -130,12 +112,12 @@
       <workItem from="1561405532555" duration="918000" />
       <workItem from="1561923002037" duration="272000" />
       <workItem from="1564162975414" duration="1232000" />
-      <workItem from="1564188043475" duration="8411000" />
+      <workItem from="1564188043475" duration="9004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53346000" />
+    <option name="totallyTimeSpent" value="53939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
