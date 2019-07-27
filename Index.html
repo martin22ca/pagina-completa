@@ -2,6 +2,7 @@
 <html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="Img/logo.ico">
     <link rel="stylesheet" type="text/css" href="css/Estilos.css">
     <script type="text/javascript" src="java/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="java/Funciones.js"> </script>
@@ -60,13 +61,10 @@
                 <ul class="comment">
                     <li><label>A= <input type="text" id="avar" size="1" value=""></label>
                         <label>B= <input type="text" id="bvar" size="1" value=""></label>
-                        <input class="submit" type="button" onclick="primer();" value="Resolver">
+                        <input class="submit" type="button" onclick="primer();can()" value="Resolver">
                     </li>
-                    <li><label>X1 = <input type="text" id="x1" value="" size="2" disabled></label></li>
+                    <li><label>X1 = <input type="text" id="x1" value="" size="2" disabled></label><canvas id="canva" class="grafix" width="600" height="400" ></canvas> </li>
                 </ul>
-                <input class="submit" type="button" onclick="can()" value="Grafico">
-                <input class="submit" type="button" onclick="reset()" value="Reset">
-                <canvas id="canva" class="grafix" width="600" height="400" ></canvas>
             </div>
 
         <div id="cpestana3">

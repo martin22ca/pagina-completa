@@ -7,10 +7,10 @@ function cambiarPestanna(pestannas,pestanna) {
     let listaPestannas = document.getElementById(pestannas.id);
 
     // Obtiene las divisiones que tienen el contenido de las pestañas.
-    cpestanna = document.getElementById('c'+pestanna.id);
-    listacPestannas = document.getElementById('contenido'+pestannas.id);
+    let cpestanna = document.getElementById('c'+pestanna.id);
+    let listacPestannas = document.getElementById('contenido'+pestannas.id);
 
-    i=0;
+    let i=0;
     // Recorre la lista ocultando todas las pestañas y restaurando el fondo
     // y el padding de las pestañas.
     while (typeof listacPestannas.getElementsByTagName('div')[i] != 'undefined'){
@@ -41,10 +41,10 @@ function discrim(){
 }
 
 function primer(){
-    var a = document.getElementById('avar').value;
-    var b = document.getElementById('bvar').value;
-    var c = ((-b)/a);
-    c = c.toFixed(2);
+    var a = document.getElementById('avar').value; //Tomo valor de la casilla a
+    var b = document.getElementById('bvar').value; //Tomo valor de la casilla b
+    var c = ((-b)/a);  //Calculo el valor de X
+    c = c.toFixed(2); // Redondeamos a dos decimales
     document.getElementById('x1').value = c;
 
 }
@@ -57,25 +57,27 @@ function soluciones(){
         alert("Sin solución real");
     else // Si no, actualizar la casilla que dice X1 y X2 por las formulas de Bashkara.
     {
-        var x1 = (-b + Math.sqrt(disc))/(2*a);
-        var x2 = (-b - Math.sqrt(disc))/(2*a);
-        document.getElementById("x11").value = x1.toFixed(2)
-        document.getElementById("x22").value =  x2.toFixed(2)
+        var x1 = (-b + Math.sqrt(disc))/(2*a); //Calculo el valor de X1
+        var x2 = (-b - Math.sqrt(disc))/(2*a); //Calculo el valor de X2
+        document.getElementById("x11").value = x1.toFixed(2); // Redondeamos a dos decimales
+        document.getElementById("x22").value =  x2.toFixed(2); // Redondeamos a dos decimales
     }
 }
 
 function can() {
     var canvas=document.getElementById("canva");
     var ctx=canvas.getContext("2d");
-
+    ctx.clearRect(0,0,canvas.width,canvas.height); //Limpiamos el canvas
+    //Graficamos la grilla
     ctx.beginPath();
-    for(let i=0;i<canvas.height;i+=10){
+
+    for(let i=0;i<canvas.height;i+=10){ //Graficamos lineas horizontales
         ctx.moveTo(0,i+10);
         ctx.strokeStyle="#9c9c9c";
         ctx.lineTo(canvas.width,i+10);
         ctx.stroke();
     }
-    for(let t=0;t<canvas.width;t+=10){
+    for(let t=0;t<canvas.width;t+=10){ //Graficamos lineas verticales
         ctx.moveTo(t+10,0);
         ctx.strokeStyle="#9c9c9c";
         ctx.lineTo(t+10,canvas.height);
@@ -83,23 +85,23 @@ function can() {
     }
     ctx.closePath();
 
-    ctx.beginPath();
+    ctx.beginPath(); //Graficamos eje de las Y
     ctx.moveTo(0,canvas.height/2);
     ctx.strokeStyle="#000";
     ctx.lineTo(canvas.width, canvas.height/2);
     ctx.stroke();
 
-    ctx.moveTo(canvas.width/2,0);
+    ctx.moveTo(canvas.width/2,0); //Graficamos eje de las X
     ctx.strokeStyle="#000";
     ctx.lineTo(canvas.width/2,canvas.height);
     ctx.stroke();
     ctx.closePath();
 
     //Grafico
-    var b =Number(document.getElementById('bvar').value);
-    var a =Number(document.getElementById('avar').value);
-    var x0 = canvas.width/2;
-    var y0 = canvas.height/2;
+    var a =Number(document.getElementById('avar').value); //Tomo el valor de A
+    var b =Number(document.getElementById('bvar').value); //Tomo el valor de B
+    var x0 = canvas.width/2; //Calculamos la mitad del grafico
+    var y0 = canvas.height/2; //Calculamos la mitad del grafico
     var x;
     var y;
     var dx = 4;
@@ -108,7 +110,7 @@ function can() {
     ctx.beginPath();
     ctx.strokeStyle="blue";
     ctx.lineWidth=2;
-    for (var i=xMin; i<xMax; i++)
+    for (var i=xMin; i<xMax; i++) //grafico de la recta
     {
         x=dx*i;
         y=(a*x+b);
@@ -121,13 +123,5 @@ function can() {
 
     ctx.stroke();
 }
-
-function reset(){
-    var c=document.getElementById('canva');
-    var ctx = c.getContext("2d");
-    ctx.clearRect(0,0,c.width,c.height);
-
-}
-
 
 

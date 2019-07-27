@@ -32,7 +32,7 @@ body {
 }
 #pestanas {
     float: top;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     font-family: "HP Simplified Light",sans-serif;
 }
@@ -59,7 +59,7 @@ body {
     text-align: left;
     color: white;
     font-family: "HP Simplified Light",sans-serif;
-    font-size: 16px;
+    font-size: 25px;
     clear: both;
     width: 90%;
     margin-left: 4%;
@@ -80,7 +80,7 @@ body {
 
 .comment {
     font-family: "HP Simplified Light",sans-serif;
-    font-size: 19px;
+    font-size: 25px;
     list-style: none;
 }
 .submit{
