@@ -4,7 +4,7 @@ function cambiarPestanna(pestannas,pestanna) {
 
     // Obtiene los elementos con los identificadores pasados.
     pestanna = document.getElementById(pestanna.id);
-    listaPestannas = document.getElementById(pestannas.id);
+    let listaPestannas = document.getElementById(pestannas.id);
 
     // Obtiene las divisiones que tienen el contenido de las pestañas.
     cpestanna = document.getElementById('c'+pestanna.id);
@@ -43,7 +43,9 @@ function discrim(){
 function primer(){
     var a = document.getElementById('avar').value;
     var b = document.getElementById('bvar').value;
-    document.getElementById('x1').value=(-b)/a;
+    var c = ((-b)/a);
+    c = c.toFixed(2);
+    document.getElementById('x1').value = c;
 
 }
 function soluciones(){
@@ -55,8 +57,10 @@ function soluciones(){
         alert("Sin solución real");
     else // Si no, actualizar la casilla que dice X1 y X2 por las formulas de Bashkara.
     {
-        document.getElementById("x11").value = (-b + Math.sqrt(disc))/(2*a);
-        document.getElementById("x22").value= (-b - Math.sqrt(disc))/(2*a);
+        var x1 = (-b + Math.sqrt(disc))/(2*a);
+        var x2 = (-b - Math.sqrt(disc))/(2*a);
+        document.getElementById("x11").value = x1.toFixed(2)
+        document.getElementById("x22").value =  x2.toFixed(2)
     }
 }
 

@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45a9c455-ed14-41f8-859a-f654615a3d4d" name="Default Changelist" comment="" />
+    <list default="true" id="45a9c455-ed14-41f8-859a-f654615a3d4d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Estilos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Funciones.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/Capture.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/E2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/E2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/P6-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/bhaskara.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Img/logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Img/res.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/res.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery-1.7.2.min.js" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,31 +34,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Main.html">
+        <entry file="file://$PROJECT_DIR$/Index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="146" column="121" selection-start-line="146" selection-start-column="121" selection-end-line="146" selection-end-column="121" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Estilos.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Funciones.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -54,43 +53,48 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Main.html" />
         <option value="$PROJECT_DIR$/Funciones.js" />
         <option value="$PROJECT_DIR$/Estilos.css" />
-        <option value="$PROJECT_DIR$/Main.html" />
+        <option value="$PROJECT_DIR$/Index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Paginilla" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Paginilla" type="462c0819:PsiDirectoryNode" />
+              <item name="Proyecto2019-Caceres-Barbero" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto2019-Caceres-Barbero" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proyectos2019-favaro-menel-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -122,11 +126,16 @@
       <workItem from="1561259106221" duration="11908000" />
       <workItem from="1561302791461" duration="1870000" />
       <workItem from="1561304820166" duration="8321000" />
+      <workItem from="1561395889615" duration="302000" />
+      <workItem from="1561405532555" duration="918000" />
+      <workItem from="1561923002037" duration="272000" />
+      <workItem from="1564162975414" duration="1232000" />
+      <workItem from="1564188043475" duration="8411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42211000" />
+    <option name="totallyTimeSpent" value="53346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -171,27 +180,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Estilos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.html" />
     <entry file="file://$PROJECT_DIR$/Funciones.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="562">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.html">
+    <entry file="file://$PROJECT_DIR$/Estilos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="146" column="121" selection-start-line="146" selection-start-column="121" selection-end-line="146" selection-end-column="121" />
+        <state relative-caret-position="539">
+          <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
         </state>
       </provider>
     </entry>
