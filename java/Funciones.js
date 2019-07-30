@@ -65,21 +65,21 @@ function soluciones(){
 }
 
 function can() {
-    var canvas=document.getElementById("canva");
-    var ctx=canvas.getContext("2d");
+    var canvas=document.getElementById("canva"); // refiere al canvas en la pagina
+    var ctx=canvas.getContext("2d"); // Indica que el grafico esta en 2 dimensiones
     ctx.clearRect(0,0,canvas.width,canvas.height); //Limpiamos el canvas
     //Graficamos la grilla
     ctx.beginPath();
 
     for(let i=0;i<canvas.height;i+=10){ //Graficamos lineas horizontales
         ctx.moveTo(0,i+10);
-        ctx.strokeStyle="#9c9c9c";
+        ctx.strokeStyle="#dbdbdb";
         ctx.lineTo(canvas.width,i+10);
         ctx.stroke();
     }
     for(let t=0;t<canvas.width;t+=10){ //Graficamos lineas verticales
         ctx.moveTo(t+10,0);
-        ctx.strokeStyle="#9c9c9c";
+        ctx.strokeStyle="#dbdbdb";
         ctx.lineTo(t+10,canvas.height);
         ctx.stroke();
     }
@@ -87,12 +87,14 @@ function can() {
 
     ctx.beginPath(); //Graficamos eje de las Y
     ctx.moveTo(0,canvas.height/2);
-    ctx.strokeStyle="#000";
+    ctx.lineWidth=4;
+    ctx.strokeStyle="#ff0006";
     ctx.lineTo(canvas.width, canvas.height/2);
     ctx.stroke();
 
     ctx.moveTo(canvas.width/2,0); //Graficamos eje de las X
-    ctx.strokeStyle="#000";
+    ctx.strokeStyle="#ff000b";
+    ctx.lineWidth=4;
     ctx.lineTo(canvas.width/2,canvas.height);
     ctx.stroke();
     ctx.closePath();
@@ -105,11 +107,11 @@ function can() {
     var x;
     var y;
     var dx = 4;
-    var xMax = Math.round((canvas.width-x0)/dx);
-    var xMin = Math.round(-x0/dx);
+    var xMax = Math.round((canvas.width-x0)/dx); //asginamos valores maximo del grafico
+    var xMin = Math.round(-x0/dx); //asignamos valor minimo para el grafico
     ctx.beginPath();
-    ctx.strokeStyle="blue";
-    ctx.lineWidth=2;
+    ctx.strokeStyle="blue"; //Color de dibujo
+    ctx.lineWidth=4; //Asignamos Ancho de linea
     for (var i=xMin; i<xMax; i++) //grafico de la recta
     {
         x=dx*i;
@@ -124,4 +126,40 @@ function can() {
     ctx.stroke();
 }
 
+function load(){
+
+    var canvas= document.getElementById("canva"); //llamo al canvas
+    var c = canvas.getContext('2d'); //pongo el contexto en 2 dimensiones
+    const fps= 30; // fotos por segundo
+    var x=canvas.width/2,y=canvas.height/2; //ponemo el circulo en el centro del canvas
+    var vy=5; //velocidad aleatoria
+    var vx=6;
+    if (Math.floor(Math.random() * 2) == 0){ //direcion inicial aleatoria
+        vx *= -1;
+    }
+    else {
+        vy *= -1;
+    }
+    setInterval(update, 1000 / fps);
+
+    function update() {
+        c.fillStyle="black"; //limpiamos el canvas
+        c.fillRect(0,0,canvas.width,canvas.height);
+        c.fillStyle="yellow";
+        c.beginPath();
+        c.arc(x,y,10,0,2*Math.PI,false); // dibujamos un circulo
+        c.fill();
+        x+=vx; //movemos el circulo
+        y+=vy;
+
+        if(((x+10+vx)>canvas.width)||(x+10+vx)<0) //rebote del circulo respecto a x
+        {
+            vx*=-1;
+        }
+        if(((y+10+vy)>canvas.height)||(y+10+vy)<0) //rebote del circulo respecto a y
+        {
+            vy*=-1;
+        }
+    }
+}
 

@@ -22,7 +22,7 @@
         </div>
     </div>
 </header>
-<body onload="cambiarPestanna(pestanas,pestana1);">
+<body onload="cambiarPestanna(pestanas,pestana1)">
         <div id="contenidopestanas">
 
             <div id="cpestana1">
@@ -62,6 +62,7 @@
                     <li><label>A= <input type="text" id="avar" size="1" value=""></label>
                         <label>B= <input type="text" id="bvar" size="1" value=""></label>
                         <input class="submit" type="button" onclick="primer();can()" value="Resolver">
+                        <input class="submit" type="button" onclick="load()" value="Animate">
                     </li>
                     <li><label>X1 = <input type="text" id="x1" value="" size="2" disabled></label><canvas id="canva" class="grafix" width="600" height="400" ></canvas> </li>
                 </ul>

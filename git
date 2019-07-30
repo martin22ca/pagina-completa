@@ -1,0 +1,46 @@
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mindex 3c00a39..270becb 100644[m
+[1m--- a/.idea/workspace.xml[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -3,24 +3,6 @@[m
+   <component name="ChangeListManager">[m
+     <list default="true" id="45a9c455-ed14-41f8-859a-f654615a3d4d" name="Default Changelist" comment="">[m
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Estilos.css" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Funciones.js" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/1.png" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/2.png" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/3.png" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/4.png" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/5.png" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/6.png" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/7.png" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/8.png" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/Capture.PNG" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/E2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/E2.png" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/P6-1.png" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/bhaskara.png" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Img/logo.jpg" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Img/res.png" beforeDir="false" afterPath="$PROJECT_DIR$/Img/res.png" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/jquery-1.7.2.min.js" beforeDir="false" />[m
+     </list>[m
+     <ignored path="$PROJECT_DIR$/.tmp/" />[m
+     <ignored path="$PROJECT_DIR$/temp/" />[m
+[36m@@ -130,12 +112,12 @@[m
+       <workItem from="1561405532555" duration="918000" />[m
+       <workItem from="1561923002037" duration="272000" />[m
+       <workItem from="1564162975414" duration="1232000" />[m
+[31m-      <workItem from="1564188043475" duration="8411000" />[m
+[32m+[m[32m      <workItem from="1564188043475" duration="9004000" />[m
+     </task>[m
+     <servers />[m
+   </component>[m
+   <component name="TimeTrackingManager">[m
+[31m-    <option name="totallyTimeSpent" value="53346000" />[m
+[32m+[m[32m    <option name="totallyTimeSpent" value="53939000" />[m
+   </component>[m
+   <component name="ToolWindowManager">[m
+     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />[m
