@@ -152,11 +152,12 @@ function load(){
         x+=vx; //movemos el circulo
         y+=vy;
 
-        if(((x+10+vx)>canvas.width)||(x+10+vx)<0) //rebote del circulo respecto a x
+
+        if(((x+10+vx)>canvas.width)||(x+10+vx)<1) //rebote del circulo respecto a x
         {
             vx*=-1;
         }
-        if(((y+10+vy)>canvas.height)||(y+10+vy)<0) //rebote del circulo respecto a y
+        if(((y+10+vy)>canvas.height)||(y+10+vy)<=1) //rebote del circulo respecto a y
         {
             vy*=-1;
         }
